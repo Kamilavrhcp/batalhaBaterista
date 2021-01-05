@@ -15,7 +15,7 @@
 
   <form class='box-style' action='' method='GET'>
     
-    <!-- NOME -->
+    <!-- Cadastro -->
     <div class='line-content'>
       <label for='full-name'>Nome Completo</label>
       <input id='full-name' type='text'>
@@ -23,30 +23,30 @@
       <input type="email" id="email" name="email">
     </div>
 
-    <!-- TIPO DA PALESTRA -->
-    <div class="line-content">
-      <fieldset class="fieldset-talk-type">
+    <!-- Aluguel de bateria -->
+      <div class="line-content">
+      <fieldset class="bass-rent">
         <legend>Aluguel de bateria</legend>
         <input type="radio" 
-          name="talk-type"
-          id="talk-type-stage"
-          value="main-stage">
-       <label for="talk-type-stage">Sim</label>
+          name="bass-rent"
+          id="bass-rent-yes"
+          value="main-bass">
+       <label for="bass-rent-yes">Sim</label>
 
        <input type="radio"
-          name="talk-type"
-          id="talk-type-workshop"
-          value="workshop">
-        <label for="talk-type-workshop">Não</label>
+          name="bass-rent"
+          id="bass-rent-yes"
+          value="main-bass-no">
+        <label for="bass-rent-no">Não</label>
         <p>Custo fixo do aluguel de R$70,00.</p>
       
       </fieldset>
     </div>
 
-    <!-- INFO CAMISA -->
-    <div class="line-content">
-      <label for="t-shirt">Estilo Musical</label>
-      <select name="t-shirt" id="t-shirt">
+      <!-- Estilo musical -->
+     <div class="line-content">
+      <label for="musical">Estilo Musical</label>
+      <select name="musical" id="musical">
         <option value="">Selecione o seu Estilo Musical</option>
         <option value="b">Blues</option>
         <option value="J">Jazz</option>
@@ -56,13 +56,13 @@
       </select>
     </div>
 
-    <!-- DESCRICAO DA PALESTRA -->
+    <!-- Outro estilo -->
     <div class="line-content">
       <label for="abstract">Outro Estilo</label>
-      <textarea name="abstract" id="abstract" class="abstract-style"></textarea>
+      <textarea name="abstract" id="abstract" class="abstract-musical"></textarea>
     </div>
 
-    <!-- DISPONIBILIDADE -->
+    <!-- Termo de serviço -->
     <div class="line-content">
       <input type="checkbox" name="availability" id="availability">
       <span>Li os termos e concordo!</span>
