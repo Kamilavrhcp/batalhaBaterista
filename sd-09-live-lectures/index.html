@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Batalha de Bateristas</title>
+</head>
+<body background="/bateria.jpg" bgproperties="fixed">
+  <header class='bass-form-header box-style'>
+    <h1>Batalha de Bateristas</h1>
+    <p><em>Quer mostrar o seu trabalho e ainda participar de uma saudável competição entre bateristas?</em></p>
+    <p><em>Preencha o formulário abaixo, pegue as suas baquetas e boa sorte!</em></p>
+   </header>
+
+  <form class='box-style' action='' method='GET'>
+    
+    <!-- Cadastro -->
+    <div class='line-content'>
+      <label for='full-name'>Nome Completo</label>
+      <input id='full-name' type='text'>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <!-- Aluguel de bateria -->
+      <div class="line-content">
+      <fieldset class="bass-rent">
+        <legend>Aluguel de bateria</legend>
+        <input type="radio" 
+          name="bass-rent"
+          id="bass-rent-yes"
+          value="main-bass">
+       <label for="bass-rent-yes">Sim</label>
+
+       <input type="radio"
+          name="bass-rent"
+          id="bass-rent-yes"
+          value="main-bass-no">
+        <label for="bass-rent-no">Não</label>
+        <p>Custo fixo do aluguel de R$70,00.</p>
+      
+      </fieldset>
+    </div>
+
+      <!-- Estilo musical -->
+     <div class="line-content">
+      <label for="musical">Estilo Musical</label>
+      <select name="musical" id="musical">
+        <option value="">Selecione o seu Estilo Musical</option>
+        <option value="b">Blues</option>
+        <option value="J">Jazz</option>
+        <option value="r">Rock</option>
+        <option value="m">Metal</option>
+        <option value="o">Outro</option>
+      </select>
+    </div>
+
+    <!-- Outro estilo -->
+    <div class="line-content">
+      <label for="abstract">Outro Estilo</label>
+      <textarea name="abstract" id="abstract" class="abstract-musical"></textarea>
+    </div>
+
+    <!-- Termo de serviço -->
+    <div class="line-content">
+      <input type="checkbox" name="availability" id="availability">
+      <span>Li os termos e concordo!</span>
+    </div>
+
+    <!-- BOTAO DE ENVIAR -->
+    <div  class="line-content">
+      <button id="style-button" type="submit"> ENVIAR 🥁!</button>
+    </div>
+    
+  </form>
+</body>
+</html>
